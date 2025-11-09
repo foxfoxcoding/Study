@@ -1,0 +1,8 @@
+#surge
+Proxy Chain
+
+[Proxy]
+ServerA = socks5, 192.168.1.1, 1080
+ServerB = https, 1.2.3.4, 443, username=user, password=password, underlying-proxy=ServerA
+
+Surge <--> ServerA <--> ServerB <--> Internet
