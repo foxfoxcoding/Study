@@ -7,7 +7,9 @@ https://kb.nssurge.com/surge-knowledge-base/zh/release-notes/snell
 sudo unzip
 -d /usr/local/bin
 chmod +x /usr/local/bin/snell-server
+
 sudo snell-server --wizard -c /etc/snell-server.conf
+
 or sudo vim /etc/snell-server.conf
 
 sudo vim /lib/systemd/system/snell.service
