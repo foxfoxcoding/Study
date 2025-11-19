@@ -36,3 +36,13 @@ end snell finish
 
 vim quic 
 :q!
+
+
+# 1. Allow incoming traffic on port 35649 for TCP (standard connections)
+sudo ufw allow 35649/tcp
+
+# 2. Allow incoming traffic on port 35649 for UDP (QUIC and other relays)
+sudo ufw allow 35649/udp
+
+sudo ufw status verbose
+
